@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+<title>2D Sierpinski Gasket</title>
+<body>
+<canvas id="gl-canvas" width="512" height="512">
+Oops ... your browser doesn't support the HTML5 canvas element
+</canvas>
+<br>
+<br>
+<label for="npoints"><b>No. of Points(500-5000):</b></label>
+<div class="slidecontainer">
+	<input type="range" min="500" max="5000" value="2500" class="slider" id="npoints">
+</div>
+<br>
+<div class="RGB">
+	<label for="rgbinsert"><b>RGB (Insert):</b></label>
+	<br>
+	<label for="red">R (0-255):</label>
+		<input type="text" <input type="number" id="red" name="red"
+			min="0" max="255">
+	<br>
+	<label for="green">G (0-255):</label>
+		<input type="text" <input type="number" id="green" name="green"
+			min="0" max="255">
+	<br>
+	<label for="blue">B (0-255):</label>
+		<input type="text" <input type="number" id="blue" name="blue"
+			min="0" max="255">
+	<br>
+	<br>
+	<label for="colorpicker"><b>Color:</b></label>
+	   <input type="color" id="colorpicker" value="#000000">
+</div>
+<br>
+<br>
+<div class="gasketbuttons">
+	<button type="button" id="bdisplay">Display</button>
+	&nbsp;
+	<button type="button" id="banimate">Animate</button>
+	&emsp;
+	&emsp;
+	&emsp;
+	&emsp;
+	<button type="button" id="bclear">Clear</button>
+</div>
+<br>
+<br>
+<p id="status"><b> Status:</b></p>
+</body>
+
+<script type="text/javascript" src="../Common/webgl-utils.js"></script>
+<script type="text/javascript" src="../Common/initShaders.js"></script>
+<script type="text/javascript" src="../Common/MV.js"></script>
+<script type="text/javascript" src="gasket1.js"></script>
+</head>
+</html>

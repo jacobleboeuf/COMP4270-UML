@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+<title>Rubberbanding & Transformations</title>
+<body>
+  <div>
+	<canvas id="gl-canvas" width="650" height="600" style="border-style: solid;">
+	Oops ... your browser doesn't support the HTML5 canvas element
+	</canvas>
+	<div id="menu"">
+		  <label for="shapemenu"><b>&nbsp; Shape: </b></label>
+			<select id="shapesSelection">
+			  <option value="line">Line</option>
+			  <option value="circle">Circle</option>
+			  <option value="rectangle">Rectangle</option>
+			  <option value="triangle">Triangle</option>
+			  <option value="polygon">Polygon</option>
+			</select>
+		  &emsp;
+		  &emsp;
+		  &emsp;
+		  &emsp;
+		  &emsp;
+		  &emsp;
+		  &emsp;
+		  <label for="tranformmenu"><b>Transformation: </b></label>
+			<select id="transformationSelect">
+			  <option value="translation">Translation</option>
+			  <option value="scaling">Scaling</option>
+			  <option value="rotation">Rotation</option>
+			</select>
+		  </div>
+	</div>
+</body>
+<script type="text/javascript" src="../Common/webgl-utils.js"></script>
+<script type="text/javascript" src="../Common/initShaders.js"></script>
+<script type="text/javascript" src="../Common/MV.js"></script>
+<script type="text/javascript" src="p3.js"></script>
+</head>
+</html>
